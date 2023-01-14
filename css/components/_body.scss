@@ -1,0 +1,130 @@
+html{
+    box-sizing: border-box;
+    
+}
+
+body{
+    background:url(../img/2396ff157744835.637e6f2b761ec.png) center/cover repeat-y;
+    width: 100%;
+    height: 100%;
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+    line-height: 1.5;
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        z-index: -1;
+    }
+
+}
+
+
+
+.wraper{
+    display: flex;
+    width: 95%;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+.main_wraper{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    color: azure;
+    gap: 30px;
+
+    .left_side{
+        width: 30%;
+
+        .main_avatar{
+            border-radius: 100%;
+            width: 200px;
+        }
+    }
+    .right_side{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 0.2fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 5px;
+
+        .div1 {
+            grid-area: 1 / 1 / 2 / 2;
+            background: url(../img/Vyshyvanka.jpg)center/cover no-repeat;
+            height: 375px;
+            transition: .3s ease-in .9s;
+
+            &:hover{
+                border-radius: 20%;
+                transform: scale(1.05);
+                transition: ease-in 1s;
+            }
+        }
+
+        .div2 {
+            grid-area: 1 / 2 / 2 / 3;
+            background: url(../img/uaGirl.jpg)center/cover no-repeat;
+            height: 375px;
+            transition: .3s ease-in .9s;
+
+            &:hover {
+                border-radius: 20%;
+                transform: scale(1.05);
+                transition: ease-in 1s;
+            }
+        }
+        
+    }
+}
+
+.main_text{
+    color:white;
+    font-family: inherit;
+    margin-bottom: 10px;
+    p{
+        text-align: center;
+    }
+}
+
+.left_side_swip{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-right: 20px;
+    
+    img{
+        width: 87px;    
+    }
+
+    .div3 {
+        grid-area: 1 / 1 / 2 / 2;
+        &:hover {transform: scale(1.02);}
+    }
+
+    .div4 {
+        grid-area: 2 / 2 / 3 / 3;
+        &:hover {transform: scale(1.02);}
+    }
+
+    .div5 {
+        grid-area: 3 / 1 / 4 / 2;
+        &:hover {transform: scale(1.02);}
+    }
+
+    .div6 {
+        grid-area: 4 / 2 / 5 / 3;
+        &:hover {transform: scale(1.02);}
+    }
+}
