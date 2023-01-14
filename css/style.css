@@ -132,37 +132,37 @@
   background-size: cover;
 }
 .slider_wraper .slide .img1 {
-  background: url(../img/_Stus.jpg) center/cover no-repeat;
+  background: url(./img/_Stus.jpg) center/cover no-repeat;
   height: 100%;
   width: 100%;
 }
 .slider_wraper .slide .img2 {
-  background: url(../img/_Skrabin.jpg) center/cover no-repeat;
+  background: url(./img/_Skrabin.jpg) center/cover no-repeat;
   height: 100%;
   width: 100%;
 }
 .slider_wraper .slide .img3 {
-  background: url(../img/_Shuhevich.jpg) center/cover no-repeat;
+  background: url(./img/_Shuhevich.jpg) center/cover no-repeat;
   height: 100%;
   width: 100%;
 }
 .slider_wraper .slide .img4 {
-  background: url(../img/_Parandjanov.jpg) center/cover no-repeat;
+  background: url(./img/_Parandjanov.jpg) center/cover no-repeat;
   height: 100%;
   width: 100%;
 }
 .slider_wraper .slide .img5 {
-  background: url(../img/_Kostenko.jpg) center/cover no-repeat;
+  background: url(./img/_Kostenko.jpg) center/cover no-repeat;
   height: 100%;
   width: 100%;
 }
 .slider_wraper .slide .img6 {
-  background: url(../img/_Hvilioviy.jpg) center/cover no-repeat;
+  background: url(./img/_Hvilioviy.jpg) center/cover no-repeat;
   height: 100%;
   width: 100%;
 }
 .slider_wraper .slide .img7 {
-  background: url(../img/_chornovil.jpg) center/cover no-repeat;
+  background: url(./img/_chornovil.jpg) center/cover no-repeat;
   height: 100%;
   width: 100%;
 }
@@ -306,7 +306,7 @@ body::before {
 }
 .main_wraper .right_side .div1 {
   grid-area: 1/1/2/2;
-  background: url(../img/Vyshyvanka.jpg) center/cover no-repeat;
+  background: url(./img/Vyshyvanka.jpg) center/cover no-repeat;
   height: 375px;
   transition: 0.3s ease-in 0.9s;
 }
@@ -317,7 +317,7 @@ body::before {
 }
 .main_wraper .right_side .div2 {
   grid-area: 1/2/2/3;
-  background: url(../img/uaGirl.jpg) center/cover no-repeat;
+  background: url(./img/uaGirl.jpg) center/cover no-repeat;
   height: 375px;
   transition: 0.3s ease-in 0.9s;
 }
