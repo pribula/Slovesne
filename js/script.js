@@ -177,12 +177,12 @@ const slideshow = new Slideshow(document.querySelector('.slideshow'));
 
 
 let allBg = [
-    'url(../img/Vyshyvanka.jpg) center/cover no-repeat',
-    'url(../img/uaGirl.jpg) center/cover no-repeat',
-    'url(../img/ua_girl.jpg) center/cover no-repeat',
-    'url(../img/slovesne.jpg) center/cover no-repeat',
-    'url(../img/Lutiy.jpg) center/cover no-repeat',
-    'url(../img/Azov.jpg) center/cover no-repeat',
+    'url(./img/Vyshyvanka.jpg) center/cover no-repeat',
+    'url(./img/uaGirl.jpg) center/cover no-repeat',
+    'url(./img/ua_girl.jpg) center/cover no-repeat',
+    'url(./img/slovesne.jpg) center/cover no-repeat',
+    'url(./img/Lutiy.jpg) center/cover no-repeat',
+    'url(./img/Azov.jpg) center/cover no-repeat',
 ];
 
 let divBG1 = document.querySelector('.div1');
