@@ -210,9 +210,9 @@ setInterval(changeBG, 6000);
 let preloader = document.querySelector('.preloader');
 
 window.onload = () => {
-    setTimeout(() => { !preloader.classList.contains('done') && preloader.classList.add('done') }, 200),
+    setTimeout(() => { !preloader.classList.contains('done') && preloader.classList.add('done') }, 25),
         setTimeout(() => {
             preloader.classList.contains('done') && preloader.classList.add('done2')
-        }, 700);
+        }, 325);
 };
 
