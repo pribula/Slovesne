@@ -177,29 +177,38 @@ const slideshow = new Slideshow(document.querySelector('.slideshow'));
 
 
 let allBg = [
-    'url(./img/Vyshyvanka.jpg) center/cover no-repeat',
-    'url(./img/uaGirl.jpg) center/cover no-repeat',
-    'url(./img/ua_girl.jpg) center/cover no-repeat',
-    'url(./img/slovesne.jpg) center/cover no-repeat',
-    'url(./img/Lutiy.jpg) center/cover no-repeat',
-    'url(./img/Azov.jpg) center/cover no-repeat',
+    './img/Vyshyvanka.jpg',
+    './img/uaGirl.jpg',
+    './img/ua_girl.jpg',
+    './img/slovesne.jpg',
+    './img/Lutiy.jpg',
+    './img/Azov.jpg',
 ];
 
-let divBG1 = document.querySelector('.div1');
-let divBG2 = document.querySelector('.div2');
+let alt = [
+    'Slovesne',
+    'Graphic Designer',
+    'culture',
+    'SMM',
+    'war ua',
+    'Azov',
+];
+
+let divBG1 = document.querySelector('.img1');
+let divBG2 = document.querySelector('.img2');
 
 let i = 2;
 let y = 3;
 
-
 function changeBG() {
-    divBG1.style.background = allBg[i];
-    divBG2.style.background = allBg[y];
-    y = y + 2;
+    divBG1.src = allBg[i], divBG1.alt = alt[i];
+    divBG2.src = allBg[y], divBG2.alt = alt[y];
     i = i + 2;
+    y = y + 2;
 
-    i > 5 ? i = -2 : '';
-    y > 6 ? y = -1 : '';
+
+    i > 4 ? i = 0 : '';
+    y > 5 ? y = 1 : '';
 }
 
 setInterval(changeBG, 6000);
