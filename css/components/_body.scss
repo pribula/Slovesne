@@ -61,28 +61,46 @@ body{
 
         .div1 {
             grid-area: 1 / 1 / 2 / 2;
-            background: url(../img/Vyshyvanka.jpg)center/cover no-repeat;
             height: 375px;
-            transition: .3s ease-in .9s;
+            
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                margin-left: auto;
+                margin-right: auto;
+                transition: .3s ease-in-out .9s;
 
-            &:hover{
-                border-radius: 20%;
-                transform: scale(1.05);
-                transition: ease-in 1s;
+                &:hover {
+                        border-radius: 20%;
+                        transform: scale(1.05);
+                        transition:0.2s ease-in ;
+                    }
             }
+
+            
         }
 
         .div2 {
             grid-area: 1 / 2 / 2 / 3;
-            background: url(../img/uaGirl.jpg)center/cover no-repeat ;
             height: 375px;
-            transition: .3s ease-in .9s;
 
-            &:hover {
-                border-radius: 20%;
-                transform: scale(1.05);
-                transition: ease-in 1s;
-            }
+            img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    margin-left: auto;
+                    margin-right: auto;
+                    transition: .3s ease-in .9s;
+
+                    &:hover {
+                            border-radius: 20%;
+                            transform: scale(1.05);
+                            transition: 0.2s ease-in;
+                        }
+                }
+
+            
         }
         
     }
