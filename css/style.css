@@ -16,7 +16,7 @@
 
 .done {
   opacity: 0;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .done2 {
@@ -131,40 +131,13 @@
   height: 100%;
   background-size: cover;
 }
-.slider_wraper .slide .img1 {
-  background: url(../img/Stus.jpg) center/cover no-repeat;
+.slider_wraper .slide img {
   height: 100%;
   width: 100%;
-}
-.slider_wraper .slide .img2 {
-  background: url(../img/Skrabin.jpg) center/cover no-repeat;
-  height: 100%;
-  width: 100%;
-}
-.slider_wraper .slide .img3 {
-  background: url(../img/Shuhevich.jpg) center/cover no-repeat;
-  height: 100%;
-  width: 100%;
-}
-.slider_wraper .slide .img4 {
-  background: url(../img/Parandjanov.jpg) center/cover no-repeat;
-  height: 100%;
-  width: 100%;
-}
-.slider_wraper .slide .img5 {
-  background: url(../img/Kostenko.jpg) center/cover no-repeat;
-  height: 100%;
-  width: 100%;
-}
-.slider_wraper .slide .img6 {
-  background: url(../img/Hvilioviy.jpg) center/cover no-repeat;
-  height: 100%;
-  width: 100%;
-}
-.slider_wraper .slide .img7 {
-  background: url(../img/chornovil.jpg) center/cover no-repeat;
-  height: 100%;
-  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 .slider_wraper .slide-title {
   margin-top: -85%;
@@ -308,25 +281,39 @@ body {
 }
 .main_wraper .right_side .div1 {
   grid-area: 1/1/2/2;
-  background: url(../img/Vyshyvanka.jpg) center/cover no-repeat;
   height: 375px;
-  transition: 0.3s ease-in 0.9s;
 }
-.main_wraper .right_side .div1:hover {
+.main_wraper .right_side .div1 img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.3s ease-in-out 0.9s;
+}
+.main_wraper .right_side .div1 img:hover {
   border-radius: 20%;
   transform: scale(1.05);
-  transition: ease-in 1s;
+  transition: 0.2s ease-in;
 }
 .main_wraper .right_side .div2 {
   grid-area: 1/2/2/3;
-  background: url(../img/uaGirl.jpg) center/cover no-repeat;
   height: 375px;
+}
+.main_wraper .right_side .div2 img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
   transition: 0.3s ease-in 0.9s;
 }
-.main_wraper .right_side .div2:hover {
+.main_wraper .right_side .div2 img:hover {
   border-radius: 20%;
   transform: scale(1.05);
-  transition: ease-in 1s;
+  transition: 0.2s ease-in;
 }
 
 .main_text {
