@@ -171,45 +171,49 @@ class Slideshow {
 const slideshow = new Slideshow(document.querySelector('.slideshow'));
 
 
-
-// bg change
-
-
-
-let allBg = [
-    './img/Vyshyvanka.jpg',
-    './img/uaGirl.jpg',
-    './img/ua_girl.jpg',
-    './img/slovesne.jpg',
-    './img/Lutiy.jpg',
-    './img/Azov.jpg',
-];
-
-let alt = [
-    'Slovesne',
-    'Graphic Designer',
-    'culture',
-    'SMM',
-    'war ua',
-    'Azov',
-];
-
 let divBG1 = document.querySelector('.img1');
-let divBG2 = document.querySelector('.img2');
+let divBG2 = document.querySelector('.img3');
+let divBG3 = document.querySelector('.img4');
 
-let i = 2;
+let divBG4 = document.querySelector('.img2');
+let divBG5 = document.querySelector('.img5');
+let divBG6 = document.querySelector('.img6');
+
+let Bg = [
+    divBG1,
+    divBG2,
+    divBG3,
+
+    divBG4,
+    divBG5,
+    divBG6,
+
+];
+let i = 0;
+let ii = 1;
 let y = 3;
-
+let yy = 4;
 function changeBG() {
-    divBG1.src = allBg[i], divBG1.alt = alt[i];
-    divBG2.src = allBg[y], divBG2.alt = alt[y];
-    i = i + 2;
-    y = y + 2;
+    Bg[i].classList.toggle('none'), Bg[ii].classList.add('none');
+    Bg[y].classList.toggle('none'), Bg[yy].classList.add('none');
 
+    i = i + 1;
+    y = y + 1;
 
-    i > 4 ? i = 0 : '';
-    y > 5 ? y = 1 : '';
+    ii = ii + 1;
+    yy = yy + 1;
+
+    i > 2 ? i = 0 : '';
+    y > 5 ? y = 3 : '';
+
+    ii > 2 ? ii = 0 : '';
+    yy > 5 ? yy = 3 : '';
+
 }
+
+
+
+
 
 setInterval(changeBG, 6000);
 

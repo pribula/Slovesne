@@ -280,10 +280,22 @@ body {
   grid-row-gap: 5px;
 }
 .main_wraper .right_side .div1 {
+  position: relative;
   grid-area: 1/1/2/2;
   height: 375px;
 }
+.main_wraper .right_side .div1:hover {
+  border-radius: 20%;
+  transform: scale(1.05);
+  transition: 0.2s ease-in;
+}
+.main_wraper .right_side .div1 .none {
+  opacity: 1;
+}
 .main_wraper .right_side .div1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -291,17 +303,27 @@ body {
   margin-left: auto;
   margin-right: auto;
   transition: 0.3s ease-in-out 0.9s;
+  opacity: 0;
 }
-.main_wraper .right_side .div1 img:hover {
+.main_wraper .right_side .div2 {
+  position: relative;
+  grid-area: 1/2/2/3;
+  height: 375px;
+}
+.main_wraper .right_side .div2:hover {
   border-radius: 20%;
   transform: scale(1.05);
   transition: 0.2s ease-in;
 }
-.main_wraper .right_side .div2 {
-  grid-area: 1/2/2/3;
-  height: 375px;
+.main_wraper .right_side .div2 .none {
+  opacity: 1;
 }
 .main_wraper .right_side .div2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -309,11 +331,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   transition: 0.3s ease-in 0.9s;
-}
-.main_wraper .right_side .div2 img:hover {
-  border-radius: 20%;
-  transform: scale(1.05);
-  transition: 0.2s ease-in;
+  opacity: 0;
 }
 
 .main_text {
