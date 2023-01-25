@@ -147,7 +147,6 @@
   white-space: normal;
   word-break: break-word;
   color: rgb(168, 112, 0);
-  z-index: 100;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: normal;
@@ -176,7 +175,6 @@
   justify-content: center;
   align-items: center;
   transition: 0.3s opacity;
-  z-index: 10;
 }
 .slider_wraper .slideshow-pagination-item {
   display: flex;
@@ -290,6 +288,8 @@ body {
   transition: 0.2s ease-in;
 }
 .main_wraper .right_side .div1 .none {
+  z-index: 1;
+  transition: opacity 0.5s;
   opacity: 1;
 }
 .main_wraper .right_side .div1 img {
@@ -303,7 +303,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   transition: 0.3s ease-in-out 0.9s;
-  opacity: 0;
+  opacity: 0.5;
 }
 .main_wraper .right_side .div2 {
   position: relative;
@@ -316,6 +316,8 @@ body {
   transition: 0.2s ease-in;
 }
 .main_wraper .right_side .div2 .none {
+  z-index: 1;
+  transition: opacity 0.5s;
   opacity: 1;
 }
 .main_wraper .right_side .div2 img {
@@ -330,8 +332,7 @@ body {
      object-fit: cover;
   margin-left: auto;
   margin-right: auto;
-  transition: 0.3s ease-in 0.9s;
-  opacity: 0;
+  opacity: 0.5;
 }
 
 .main_text {
@@ -339,7 +340,7 @@ body {
   font-family: inherit;
   margin: 10px 5px;
 }
-.main_text h3 {
+.main_text p {
   text-align: center;
 }
 
