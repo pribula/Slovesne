@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /css/
+Crawl-delay: 6
+Sitemap: https://pribula.github.io/Slovesne/sitemap.xml
