@@ -268,6 +268,12 @@ body {
 .main_wraper .left_side .main_avatar {
   border-radius: 100%;
   width: 200px;
+  filter: grayscale(81%);
+  transition: filter 2s;
+}
+.main_wraper .left_side .main_avatar:hover {
+  filter: grayscale(0%);
+  transition: filter 2s;
 }
 .main_wraper .right_side {
   width: 70%;
@@ -357,27 +363,43 @@ body {
 }
 .left_side_swip .div3 {
   grid-area: 1/1/2/2;
+  filter: grayscale(100%);
+  transition: filter 1s;
 }
 .left_side_swip .div3:hover {
   transform: scale(1.02);
+  filter: grayscale(0%);
+  transition: filter 1s;
 }
 .left_side_swip .div4 {
   grid-area: 2/2/3/3;
+  filter: grayscale(100%);
+  transition: filter 1s;
 }
 .left_side_swip .div4:hover {
   transform: scale(1.02);
+  filter: grayscale(0%);
+  transition: filter 1s;
 }
 .left_side_swip .div5 {
   grid-area: 3/1/4/2;
+  filter: grayscale(100%);
+  transition: filter 1s;
 }
 .left_side_swip .div5:hover {
   transform: scale(1.02);
+  filter: grayscale(0%);
+  transition: filter 1s;
 }
 .left_side_swip .div6 {
   grid-area: 4/2/5/3;
+  filter: grayscale(100%);
+  transition: filter 1s;
 }
 .left_side_swip .div6:hover {
   transform: scale(1.02);
+  filter: grayscale(0%);
+  transition: filter 1s;
 }
 
 footer {

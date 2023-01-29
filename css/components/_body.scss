@@ -48,7 +48,15 @@ body{
 
         .main_avatar{
             border-radius: 100%;
-            width: 200px;
+            width: 200px; 
+            -webkit-filter: grayscale(81%);
+            filter: grayscale(81%);
+            transition: filter 2s;
+                &:hover {
+                    -webkit-filter: grayscale(0%);
+                    filter: grayscale(0%);
+                    transition: filter 2s;
+                }
         }
     }
     .right_side{
@@ -133,7 +141,7 @@ body{
     color:white;
     font-family: inherit;
     margin: 10px 5px;
-    p{
+    h3{
         text-align: center;
     }
 }
@@ -152,21 +160,56 @@ body{
 
     .div3 {
         grid-area: 1 / 1 / 2 / 2;
-        &:hover {transform: scale(1.02);}
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        transition: filter 1s;
+        &:hover {
+            transform: scale(1.02);
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+            transition: filter 1s;
+        }
     }
 
     .div4 {
         grid-area: 2 / 2 / 3 / 3;
-        &:hover {transform: scale(1.02);}
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        transition: filter 1s;
+    
+        &:hover {
+            transform: scale(1.02);
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+            transition: filter 1s;
+        }
     }
 
     .div5 {
         grid-area: 3 / 1 / 4 / 2;
-        &:hover {transform: scale(1.02);}
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        transition: filter 1s;
+    
+        &:hover {
+            transform: scale(1.02);
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+            transition: filter 1s;
+        }
     }
 
     .div6 {
         grid-area: 4 / 2 / 5 / 3;
-        &:hover {transform: scale(1.02);}
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        transition: filter 1s;
+    
+        &:hover {
+            transform: scale(1.02);
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+            transition: filter 1s;
+        }
     }
 }
