@@ -104,7 +104,8 @@
   display: flex;
   height: 100%;
   width: 75%;
-  margin: 30px auto 50px;
+  margin: 45px auto 0px;
+  padding: 0 0 79px 0;
   justify-content: space-evenly;
 }
 .slider_wraper section {
@@ -249,14 +250,13 @@ body {
 .wraper {
   display: flex;
   width: 95%;
-  min-height: 100vh;
   overflow: hidden;
   flex-direction: column;
   margin: 0px auto;
 }
 
 .main_wraper {
-  margin-top: 10px;
+  margin-top: 17px;
   display: flex;
   width: 100%;
   color: azure;
@@ -275,6 +275,36 @@ body {
   filter: grayscale(0%);
   transition: filter 2s;
 }
+.main_wraper .right_side2 {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.main_wraper .right_side2.none2 {
+  display: none;
+}
+.main_wraper .right_side2 .right_side_half1 {
+  height: 50%;
+  display: flex;
+}
+.main_wraper .right_side2 .right_side_half2 {
+  height: 50%;
+  display: flex;
+}
+.main_wraper .right_side2 img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.3s ease-in-out 0.9s;
+}
+.main_wraper .right_side2 img:hover {
+  border-radius: 5%;
+  transition: 0.2s ease-in;
+}
 .main_wraper .right_side {
   width: 70%;
   display: grid;
@@ -282,6 +312,9 @@ body {
   grid-template-rows: repeat(2, 0.2fr);
   grid-column-gap: 30px;
   grid-row-gap: 5px;
+}
+.main_wraper .right_side.none2 {
+  display: none;
 }
 .main_wraper .right_side .div1 {
   position: relative;
@@ -464,6 +497,9 @@ footer {
     width: -moz-fit-content;
     width: fit-content;
     padding: 0 0 6px 0;
+  }
+  .main_wraper .left_side h1, .main_wraper .left_side p, .main_wraper .left_side h2 {
+    text-align: center;
   }
 }
 @media (max-width: 511px) {
