@@ -211,21 +211,22 @@ function changeBG() {
 
 }
 
-
-
-
-
 setInterval(changeBG, 6000);
-
 
 // preload//
 
 let preloader = document.querySelector('.preloader');
+let variant1rightside = document.querySelector('.right_side');
+let variant2rightside = document.querySelector('.right_side2');
 
 window.onload = () => {
     setTimeout(() => { !preloader.classList.contains('done') && preloader.classList.add('done') }, 25),
         setTimeout(() => {
             preloader.classList.contains('done') && preloader.classList.add('done2')
-        }, 325);
+        }, 325),
+
+        setTimeout(() => {
+            variant2rightside.classList.add('none2'), variant1rightside.classList.remove('none2')
+        }, 7000);
 };
 
