@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /css/
-Disallow: *.css
+Disallow: /js/
+Disallow: *.js
 Crawl-delay: 6
 sitemap: https://pribula.github.io/slovesne_farbota/sitemap.xml
