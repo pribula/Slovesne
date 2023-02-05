@@ -246,6 +246,10 @@ body {
   line-height: 1.5;
   position: relative;
 }
+body .seo {
+  color: aliceblue;
+  display: none;
+}
 
 .wraper {
   display: flex;
